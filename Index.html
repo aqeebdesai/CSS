@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selector:Class selector--</title>
+    <title>Selector:Group selector--</title>
     <!--Types of selectors
     1.Element selector 
     (select each element one by one by element name and apply the styling)
@@ -32,21 +32,34 @@
     (This is applied when we want to apply css to any element which is inside another element basically we can se for nested elements )-->
 
 
-    <!--Synatax for Class selector-->
-    <style>   /*Note There can be multiple classes with the same name but there cannot be multiple Id with same nae*/
-        .class1{
-            color:yellow;/*The Yellow color will be applied to all the classes who has name as class1*/
-               }
-        #Head1{
-            color:tomato;
-        }  
+    <!--Synatax for Group selector. To select them seperate them by commas-->
+<style>
+    /*Two elements group selected*/
+    h1,p{color:red;}
 
-    </style>
+    /*Two ID's group selected*/
+    #Indian,#Russian{color:aquamarine;}
+
+    /*Two classes group selected*/
+    .fourth,.fifth{color:Blue;}
+
+    /*All types group selected (element,ID,class)*/
+    h4,#para,.tenth {color:hotpink;}
+</style>
 </head>
 <body>
-    <h1 Id="Head1">This is first headding </h1>
-    <P class="class1">This pragraph is a paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi placeat recusandae repellendus doloribus harum earum provident voluptas qui ut?</P>
-    <h1 class="class1">This is second heading in blueviolet color</h1>
+    <h1>This is first heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis, voluptatum.</p>
+    
+    <h2 id="Indian">This is second heading</h2>
+    <p Id="Russian">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, sed.</p>
+    
+    <h3 class="fourth">This is third heading</h3>
+    <p class="fifth">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores praesentium incidunt alias quaerat?</p>
+    
+    <h4>This is fourth headig</h4>
+    <p id="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates tenetur tempora sapiente error!</p>
+    <H1 class="tenth">This is a Big heading</H1>
 </body>
 </html>
 
