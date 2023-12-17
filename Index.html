@@ -3,14 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>External Styling</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- even though css file is included yet it is ineffective because its commented-->
+    <title>Selector types:Elementor selector</title>
+    <!--Types of selectors
+    1.Element selector 
+    (select each element one by one by element name and apply the styling)
+
+    2.Universal selector 
+    (Apply the property to all the elements on the page. But if defined explicity then it will not apply for that which means universal selector applies stylling to all the unstyled elements)
+
+    3.Group selector 
+    (Instead of selecting one by select multiple elements at once and apply style togher at once. each element seperated by commas)
+
+    4.Id selector    
+    (To apply style to a specific id use #id_name then you can apply. Here instead of element name we write the Id name. Means we select the the Id here)
+
+     4.a)Group id selector 
+     (We can also group select Ids)
+
+    5.class selector 
+    (We can select classes as well)
+
+     5.a)Group class selector
+     (we can also group select classes)
+
+    6.Group Id ,class and element selectors
+    (We can also group slect any comination of element class Id together also)
+    7.Decendent selector
+    (This is applied when we want to apply css to any element which is inside another element basically we can se for nested elements )-->
+
+
+    <!--This below styling method is a element styling method where we select our target field by its elemenet tag-->
+    <style>
+        h1{color:salmon;}
+        p{color:forestgreen;}
+    </style>
+
 </head>
 <body>
     <h1>This is first headding in red</h1>
     <P>This pragraph is in lime green. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi placeat recusandae repellendus doloribus harum earum provident voluptas qui ut?</P>
-    <h1 style="color:blueviolet;">This is second heading in blueviolet color</h1>
+    <h1>This is second heading in blueviolet color</h1>
 </body>
 </html>
 
