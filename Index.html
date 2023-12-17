@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selector:Id selector--</title>
+    <title>Selector:Class selector--</title>
     <!--Types of selectors
     1.Element selector 
     (select each element one by one by element name and apply the styling)
@@ -32,20 +32,21 @@
     (This is applied when we want to apply css to any element which is inside another element basically we can se for nested elements )-->
 
 
-    <!--Below sytnatx is used when styling using element ID we have to use #Id_Name-->
-    <style>
+    <!--Synatax for Class selector-->
+    <style>   /*Note There can be multiple classes with the same name but there cannot be multiple Id with same nae*/
+        .class1{
+            color:yellow;/*The Yellow color will be applied to all the classes who has name as class1*/
+               }
         #Head1{
             color:tomato;
-        }                       /*This format is used for ID*/
-        #Head2{
-            color:darkorange;
-        }
+        }  
+
     </style>
 </head>
 <body>
-    <h1 id="Head1">This is first headding </h1>
-    <P id="Head2">This pragraph is a paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi placeat recusandae repellendus doloribus harum earum provident voluptas qui ut?</P>
-    <h1>This is second heading in blueviolet color</h1>
+    <h1 Id="Head1">This is first headding </h1>
+    <P class="class1">This pragraph is a paragraph. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi placeat recusandae repellendus doloribus harum earum provident voluptas qui ut?</P>
+    <h1 class="class1">This is second heading in blueviolet color</h1>
 </body>
 </html>
 
