@@ -1,23 +1,16 @@
-<!--Basic syntax is            tagselector{property:value} selector selects or chooses one of the html tag for styling
-for example Heading tag                  h1{color  : red;}    -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Internal styling</title>
-    <!--What is internal styling? If you apply styling inside style tag in or defined it seperately then its called internal styling like we had written our first code-->
-    <style>
-      h1{color:red;}
-      p{color:blue;}
-    </style>>     
+    <title>External Styling</title>
+    <!--In real life external styling only used not internal or external-->
+    <!-- To link/include css style sheet with the html we use link tag-->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>This heading is in Blue color.</h1>
-    <p>And the paragraph color is Blue Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, maiores?</p>
-    <!-- Now if I give inline styling to the tag what Happens?-->
-    <h1 style="color:brown";>This also red now</h1>
-    <h2 style="color:black;">Means the inline styling has higher priority than the internal styling</h2>
+    <h1>This is first headding in red</h1>
+    <P>This pragraph is in lime green. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis quasi placeat recusandae repellendus doloribus harum earum provident voluptas qui ut?</P>
+    <h1 style="color:blueviolet;">This is second heading in blueviolet color</h1>
 </body>
 </html>
