@@ -1,25 +1,45 @@
+<!--Practice
+1.create a heding and set the color red.
+2.create a div with id #heading,include CSS using all 3 ways line, style tag and external,observe priority.
+3.Add comments to your CSS class
+4.Create a div, praragraph and heading and use id Selector, element selectoe and class selector for them.
+5.create two divs with id first and second and define color for both using group selector-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selector:Decendent(childern)</title>
-    <!--Some time I want to apply same color to multiple elements but I dont want all of them to be in the same class then we go for Group selector-->
-</head>
+    <title>Practice</title>
+    <link rel="stylesheet" href="index.css">
     <style>
-        #first p,h2{    /* If you want to paint specific decenent give theire element name with a space*/
-            color:brown; /* If you want to paint 2 childs p and h2 only seperate them by commas */
-        }    /*Note:Here parent and child must be seperated by spaces for eg. first is parent and p&h are childeren*/
+    /*enable and   disable to make stylesheet inclussion efffective*/
+        /*h1{
+            color:brown;  
+        }*/
     </style>
+</head>
 <body>
-
-    <div id="first">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum magni consequuntur voluptate dolorem accusamus blanditiis voluptatum unde deleniti et commodi!</p>
-        <h1>Heading one in div1</h1>
-        <h2>Heading 2 in div2</h2>
+    <h1 style="color:green;">THIS IS MY HEADING</h1>
+    <div id="heading">Heading
+        <h1>This is second heading 1</h1>
+        <h1>This is Third heading</h1>
+        <h1 style="color:green;">This is forth heading</h1>
+   <!--Style tag is not preffered here this i just for practice-->
+   <style>
+        #div_22{color:orangered;}
+        .final{color:grey;}
+        h1{color:green;}
+        
+   </style>
+    <div id="div_22">Indian
+    <p class="final">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sint?</p>
+    <h1>This is big heading</h1>
     </div>
-    <div>
-        <p>This para is in 2nd div Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia magni possimus. Voluptatibus ea alias, fuga aliquid commodi sapiente amet! Sit minima numquam nam delectus perspiciatis dolorem veritatis nostrum magnam soluta dignissimos ducimus tempore, illo explicabo dicta ipsam. Enim magnam numquam minima, aut expedita similique dolores tempora tempore nisi repellendus?</p>
-    </div>
+  <style>
+    #First,#Second{color:blue}
+  </style>
+<div id="First">First div</div>
+<div id="Second">Second div</div>
 </body>
 </html>
