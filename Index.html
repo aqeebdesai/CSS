@@ -1,45 +1,15 @@
-<!--Practice
-1.create a heding and set the color red.
-2.create a div with id #heading,include CSS using all 3 ways line, style tag and external,observe priority.
-3.Add comments to your CSS class
-4.Create a div, praragraph and heading and use id Selector, element selectoe and class selector for them.
-5.create two divs with id first and second and define color for both using group selector-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice</title>
-    <link rel="stylesheet" href="index.css">
+    <title>background color</title>
     <style>
-    /*enable and   disable to make stylesheet inclussion efffective*/
-        /*h1{
-            color:brown;  
-        }*/
+        * {margin: 0; padding: 0;} /* making margin and padding 0 so that default margins and padding are made zero*/
+      .bakcolor{color:yellow; background-color:green;}
     </style>
 </head>
 <body>
-    <h1 style="color:green;">THIS IS MY HEADING</h1>
-    <div id="heading">Heading
-        <h1>This is second heading 1</h1>
-        <h1>This is Third heading</h1>
-        <h1 style="color:green;">This is forth heading</h1>
-   <!--Style tag is not preffered here this i just for practice-->
-   <style>
-        #div_22{color:orangered;}
-        .final{color:grey;}
-        h1{color:green;}
-        
-   </style>
-    <div id="div_22">Indian
-    <p class="final">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, sint?</p>
-    <h1>This is big heading</h1>
-    </div>
-  <style>
-    #First,#Second{color:blue}
-  </style>
-<div id="First">First div</div>
-<div id="Second">Second div</div>
+    <div class="bakcolor">background color is green and foreground color is yellow</div>
 </body>
 </html>
